@@ -9,21 +9,26 @@ int main(void)
     do
     {
         height = get_int("Height:\n");
-    }while (height < 1 || height > 8);
+    }
+    while (height < 1 || height > 8);
     create_pyramid(height);
 }
 
 void create_pyramid(int size)
 {
-    for(int i=size-1; i>=0; i--){
-        for(int l=i; l>0;l--){
+    for (int i = size-1 ; i >= 0; i--)
+    {
+        for (int l = i; l > 0; l--)
+        {
             printf(" ");
         }
-        for(int j=size; j>i; j--){
+        for (int j = size ; j > i ; j--)
+        {
             printf("#");
         }
         printf("  ");
-        for(int k=size; k>i; k--){
+        for (int k = size ; k > i ; k--)
+        {
             printf("#");
         }
         printf("\n");
