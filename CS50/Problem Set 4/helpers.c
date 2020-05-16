@@ -2,7 +2,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-//RGBTRIPLE pad(int height, int width, RGBTRIPLE image[height][width]);
 int cap(double color);
 
 // Convert image to grayscale
